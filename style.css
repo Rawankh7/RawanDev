@@ -725,17 +725,42 @@ body {
     color: white;
 }
 
+/* توزيع معرض الصور شبكياً بشكل احترافي ليستوعب الـ 6 واجهات */
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 14px;
-    margin-top: 10px;
+    gap: 16px;
+    margin-top: 20px;
 }
+
 .gallery img {
     width: 100%;
+    height: auto;
     border-radius: 16px;
     border: 1px solid var(--border);
     display: block;
+    transition: transform 0.3s var(--ease-smooth), border-color 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+    border-color: var(--accent);
+}
+
+/* ============================================
+   PROJECT DESCRIPTION INSIDE MODALS
+============================================ */
+.project-description {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 24px;
+    margin-top: -8px;
+    white-space: pre-line; /* لكسر السطور وعرض النقاط البرمجية للآليات بشكل مرتب */
+}
+
+[dir="rtl"] .project-description {
+    text-align: right;
 }
 
 /* ============================================
