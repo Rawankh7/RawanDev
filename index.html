@@ -119,15 +119,17 @@
             <div class="bento-item large reveal" onclick="openModal('modal-codered')">
                 <div class="card-inner">
                     <div class="project-top">
-                        <img src="assets/codered-logo.png" class="p-icon" alt="CodeRed" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <img src="../assets/codered-logo.png" class="p-icon" alt="CodeRed" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                         <div class="p-icon-fallback" style="display:none">🔴</div>
                         <span class="project-tag" data-en="Graduation Project" data-ar="مشروع تخرج">Graduation Project</span>
                     </div>
                     <h3 data-en="CodeRed: AI Weapon Detection" data-ar="كود ريد: كشف الأسلحة">CodeRed: AI Weapon Detection</h3>
                     <p data-en="Security system utilizing AI and computer vision." data-ar="نظام أمني يستخدم الذكاء الاصطناعي والرؤية الحاسوبية.">Security system utilizing AI and computer vision.</p>
                     <div class="project-footer">
-                        <span class="tech-pill">AI</span>
-                        <span class="tech-pill">Computer Vision</span>
+                        <span class="tech-pill">AI & Deep Learning</span>
+                        <span class="tech-pill">YOLOv8/v9</span>
+                        <span class="tech-pill">OpenCV</span>
+                        <span class="tech-pill">Flask Backend</span>
                         <span class="view-arrow">→</span>
                     </div>
                 </div>
@@ -136,7 +138,7 @@
             <div class="bento-item reveal" onclick="openModal('modal-masjid')">
                 <div class="card-inner">
                     <div class="project-top">
-                        <img src="assets/masjid-logo.png" class="p-icon" alt="Masjid App" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <img src="../assets/masjid-logo.png" class="p-icon" alt="Masjid App" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                         <div class="p-icon-fallback" style="display:none">🕌</div>
                         <span class="project-tag">watchOS</span>
                     </div>
@@ -198,7 +200,7 @@
             <div class="bento-item reveal" onclick="openModal('modal-suword')">
                 <div class="card-inner">
                     <div class="project-top">
-                        <img src="assets/suword-icon.png" class="p-icon" alt="Suword" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <img src="../assets/suword-icon.png" class="p-icon" alt="Suword" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                         <div class="p-icon-fallback" style="display:none">🧩</div>
                         <span class="project-tag">Game</span>
                     </div>
@@ -214,7 +216,7 @@
             <div class="bento-item reveal" onclick="openModal('modal-learning')">
                 <div class="card-inner">
                     <div class="project-top">
-                        <img src="assets/learning-icon.png" class="p-icon" alt="Learning App" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <img src="../assets/learning-icon.png" class="p-icon" alt="Learning App" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                         <div class="p-icon-fallback" style="display:none">📚</div>
                         <span class="project-tag">iOS</span>
                     </div>
@@ -222,6 +224,23 @@
                     <p data-en="UI Implementation from design specs." data-ar="تنفيذ الواجهات من مواصفات التصميم.">UI Implementation from design specs.</p>
                     <div class="project-footer">
                         <span class="tech-pill">SwiftUI</span>
+                        <span class="view-arrow">→</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bento-item reveal" onclick="openModal('modal-trackit')">
+                <div class="card-inner">
+                    <div class="project-top">
+                        <img src="../assets/trackit-icon.png" class="p-icon" alt="TrackIt App" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <div class="p-icon-fallback" style="display:none">⏱️</div>
+                        <span class="project-tag">iOS / watchOS</span>
+                    </div>
+                    <h3 data-en="TrackIt App" data-ar="تطبيق TrackIt">TrackIt App</h3>
+                    <p data-en="A habit-building iOS application developed with SwiftUI, featuring per-day progress tracking, mood journaling, and local push notifications." data-ar="تطبيق لنظام iOS لبناء العادات تم تطويره باستخدام SwiftUI، يتميز بتتبع التقدم اليومي وتدوين الحالة المزاجية والإشعارات المحلية.">A habit-building iOS application developed with SwiftUI, featuring per-day progress tracking, mood journaling, and local push notifications.</p>
+                    <div class="project-footer">
+                        <span class="tech-pill">SwiftUI</span>
+                        <span class="tech-pill">Apple Watch</span>
                         <span class="view-arrow">→</span>
                     </div>
                 </div>
@@ -252,7 +271,6 @@
     <footer id="contact" class="container section-padding">
         <div class="footer-inner reveal">
             <h2 class="footer-heading" data-en="Get in Touch." data-ar="للتواصل">Get in Touch.</h2>
-
             <div class="contact-grid">
                 <a href="https://www.linkedin.com/in/rawan-alkhaldi-090397309/" target="_blank" aria-label="LinkedIn">
                     <i class="fab fa-linkedin"></i>
@@ -268,13 +286,128 @@
         </div>
     </footer>
 
-    <div id="modal-codered" class="modal"><div class="modal-card"><button class="close" onclick="closeModal('modal-codered')" aria-label="Close">&times;</button><h2>CodeRed AI</h2><div class="gallery"><img src="assets/codered-1.png" alt=""><img src="assets/codered-2.png" alt=""></div></div></div>
-    <div id="modal-masjid" class="modal"><div class="modal-card"><button class="close" onclick="closeModal('modal-masjid')" aria-label="Close">&times;</button><h2>Masjid App</h2><div class="gallery"><img src="assets/masjid-1.png" alt=""><img src="assets/masjid-2.png" alt=""><img src="assets/masjid-3.png" alt=""><img src="assets/qibla-1.png" alt=""><img src="assets/qibla-2.png" alt=""><img src="assets/qibla-3.png" alt=""></div></div></div>
-    <div id="modal-masjid-web" class="modal"><div class="modal-card"><button class="close" onclick="closeModal('modal-masjid-web')" aria-label="Close">&times;</button><h2>Masjid Website</h2><div class="gallery"><img src="assets/masjid-web-1.png" alt=""></div></div></div>
-    <div id="modal-abyan" class="modal"><div class="modal-card"><button class="close" onclick="closeModal('modal-abyan')" aria-label="Close">&times;</button><h2>Abyan Capital</h2><div class="gallery"><img src="assets/abyan-1.png" alt=""><img src="assets/abyan-2.png" alt=""><img src="assets/abyan-3.png" alt=""></div></div></div>
-    <div id="modal-speech" class="modal"><div class="modal-card"><button class="close" onclick="closeModal('modal-speech')" aria-label="Close">&times;</button><h2>Speech to Text</h2><div class="gallery"><img src="assets/speech-1.png" alt=""></div></div></div>
-    <div id="modal-suword" class="modal"><div class="modal-card"><button class="close" onclick="closeModal('modal-suword')" aria-label="Close">&times;</button><h2>Suword Game</h2><div class="gallery"><img src="assets/suword-1.png" alt=""><img src="assets/suword-2.png" alt=""><img src="assets/suword-3.png" alt=""></div></div></div>
-    <div id="modal-learning" class="modal"><div class="modal-card"><button class="close" onclick="closeModal('modal-learning')" aria-label="Close">&times;</button><h2>Learning App</h2><div class="gallery"><img src="assets/learning-1.png" alt=""><img src="assets/learning-2.png" alt=""><img src="assets/learning-3.png" alt=""></div></div></div>
+    <div id="modal-codered" class="modal">
+        <div class="modal-card">
+            <button class="close" onclick="closeModal('modal-codered')" aria-label="Close">&times;</button>
+            <h2>CodeRed AI</h2>
+            <p class="project-description" 
+               [cite_start]data-en="A proactive, AI-driven public safety solution that leverages cutting-edge computer vision and deep learning algorithms to detect individuals carrying firearms in real-time[cite: 55]. Operating as a 'silent guardian' without continuous human monitoring, the system integrates seamlessly with IP surveillance infrastructure to deliver instantaneous alert notifications, minimize human error, and accelerate emergency response times[cite: 56, 57, 62]." 
+               [cite_start]data-ar="حل مبتكر ومتكامل للأمن والسلامة العامة يعتمد على الذكاء الاصطناعي وتقنيات رؤية الحاسوب المتقدمة للكشف عن الأفراد الذين يحملون أسلحة نارية في الوقت الفعلي[cite: 55, 61]. يعمل النظام بشكل مستقل كـ 'حارس صامت' دون الحاجة لتدخل بشري مستمر، حيث يتكامل مع شبكات كاميرات المراقبة لإرسال تنبيهات فورية، مما يحد من الأخطاء البشرية ويعزز سرعة الاستجابة في حالات الطوارئ[cite: 61, 62, 63].">
+               A proactive, AI-driven public safety solution that leverages cutting-edge computer vision and deep learning algorithms to detect individuals carrying firearms in real-time[cite: 55]. Operating as a 'silent guardian' without continuous human monitoring, the system integrates seamlessly with IP surveillance infrastructure to deliver instantaneous alert notifications, minimize human error, and accelerate emergency response times[cite: 56, 57, 62].
+            </p>
+            <p class="project-description" style="margin-top: 10px; font-weight: 600;" data-en="Technical Mechanisms & Frameworks:" data-ar="الآليات والتقنيات البرمجية المستخدمة:">Technical Mechanisms & Frameworks:</p>
+            <p class="project-description" style="font-size: 0.9rem; line-height: 1.6;"
+               [cite_start]data-en="• Core Object Detection: YOLO (v8/v9) and Convolutional Neural Networks (CNNs) via TensorFlow/PyTorch for ultra-fast frame inference [cite: 309, 311, 1051, 1058].&#10;• Image Processing: OpenCV framework for real-time video acquisition (30+ FPS), noise reduction, color normalization, and histogram equalization [cite: 311, 618, 695, 1038].&#10;• Backend Ecosystem: Python-based Flask micro-framework managing RESTful APIs, threat logging, and data persistence with SQLite [cite: 732, 1150, 1156, 1160].&#10;• Alert Routing: Instantaneous multi-channel distribution utilizing Firebase/Twilio for real-time mobile and dashboard notifications[cite: 310, 726, 1002]."
+               [cite_start]data-ar="• نموذج الفحص الأساسي: خوارزميات YOLO (v8/v9) والشبكات العصبية الالتفافية (CNNs) عبر TensorFlow/PyTorch لتحليل الإطارات بسرعة فائقة [cite: 309, 311, 1051, 1058].&#10;• معالجة الصور الرقمية: مكتبة OpenCV لالتقاط دفق الفيديو المباشر (+30 إطار/ثانية)، وتطبيق فلاتر تقليل الضوضاء، وموازنة الإضاءة (Histogram Equalization) [cite: 311, 618, 695, 1038].&#10;• البيئة الخلفية وإدارة البيانات: إطار عمل Flask المعتمد على لغة Python لبناء برمجيات واجهة التطبيق (APIs)، وتوثيق الأحداث في قاعدة بيانات SQLite [cite: 732, 1150, 1156, 1160].&#10;• منظومة التنبيه الفوري: قنوات ربط رقمية مدعومة بخدمات Firebase/Twilio لإرسال إشعارات فورية لحظة رصد الخطر إلى الأجهزة المحمولة ولوحات التحكم[cite: 310, 726, 1002].">
+               • Core Object Detection: YOLO (v8/v9) and Convolutional Neural Networks (CNNs) via TensorFlow/PyTorch for ultra-fast frame inference[cite: 309, 311, 1051, 1058].<br>
+               • Image Processing: OpenCV framework for real-time video acquisition (30+ FPS), noise reduction, color normalization, and histogram equalization[cite: 311, 618, 695, 1038].<br>
+               • Backend Ecosystem: Python-based Flask micro-framework managing RESTful APIs, threat logging, and data persistence with SQLite[cite: 732, 1150, 1156, 1160].<br>
+               • Alert Routing: Instantaneous multi-channel distribution utilizing Firebase/Twilio for real-time mobile and dashboard notifications[cite: 310, 726, 1002].
+            </p>
+            <div class="gallery">
+                <img src="../assets/codered-1.png" alt="" onerror="this.style.display='none'">
+                <img src="../assets/codered-2.png" alt="" onerror="this.style.display='none'">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-masjid" class="modal">
+        <div class="modal-card">
+            <button class="close" onclick="closeModal('modal-masjid')" aria-label="Close">&times;</button>
+            <h2>Masjid App</h2>
+            <p class="project-description" 
+               data-en="An innovative application tailored for Apple Watch (watchOS) designed to empower hearing-impaired users to follow prayer rituals and timings seamlessly via advanced haptic feedback." 
+               data-ar="تطبيق مبتكر مخصص لساعة آبل (watchOS) يهدف لتمكين المستخدمين من فئة الصم وضعاف السمع من متابعة الصلوات والشعائر الدينية بيسر عبر اهتزازات حسية تفاعلية متقدمة.">
+               An innovative application tailored for Apple Watch (watchOS) designed to empower hearing-impaired users to follow prayer rituals and timings seamlessly via advanced haptic feedback.
+            </p>
+            <div class="gallery"><img src="../assets/masjid-1.png" alt=""><img src="../assets/masjid-2.png" alt=""><img src="../assets/masjid-3.png" alt=""><img src="../assets/qibla-1.png" alt=""><img src="../assets/qibla-2.png" alt=""><img src="../assets/qibla-3.png" alt=""></div>
+        </div>
+    </div>
+
+    <div id="modal-masjid-web" class="modal">
+        <div class="modal-card">
+            <button class="close" onclick="closeModal('modal-masjid-web')" aria-label="Close">&times;</button>
+            <h2>Masjid Website</h2>
+            <p class="project-description" 
+               data-en="A responsive, modern landing page designed to showcase the Masjid application's features, visual assets, and dynamic installation guides." 
+               data-ar="صفحة هبوط حديثة ومتجاوبة مصممة لاستعراض مميزات تطبيق مسجد، الواجهات المرئية، وأدلة تثبيت التطبيق بشكل تفاعلي ومبسط.">
+               A responsive, modern landing page designed to showcase the Masjid application's features, visual assets, and dynamic installation guides.
+            </p>
+            <div class="gallery"><img src="../assets/masjid-web-1.png" alt=""></div>
+        </div>
+    </div>
+
+    <div id="modal-abyan" class="modal">
+        <div class="modal-card">
+            <button class="close" onclick="closeModal('modal-abyan')" aria-label="Close">&times;</button>
+            <h2>Abyan Capital</h2>
+            <p class="project-description" 
+               data-en="Strategic user interface and user experience (UI/UX) optimizations focused on improving accessibility, user flow, and the visual hierarchy for the financial investment platform." 
+               data-ar="تحسينات استراتيجية لواجهات وتجربة المستخدم (UI/UX) لمنصة الاستثمار المالي، مع التركيز على تسهيل التدفق البرمجي، تعزيز الوصولية، وتحسين الهيكل البصري للبيانات المالية.">
+               Strategic user interface and user experience (UI/UX) optimizations focused on improving accessibility, user flow, and the visual hierarchy for the financial investment platform.
+            </p>
+            <div class="gallery"><img src="../assets/abyan-1.png" alt=""><img src="../assets/abyan-2.png" alt=""><img src="../assets/abyan-3.png" alt=""></div>
+        </div>
+    </div>
+
+    <div id="modal-speech" class="modal">
+        <div class="modal-card">
+            <button class="close" onclick="closeModal('modal-speech')" aria-label="Close">&times;</button>
+            <h2>Speech to Text</h2>
+            <p class="project-description" 
+               data-en="A web-based voice recognition utility leveraging the Web Speech API to transcribe spoken audio into written text accurately and in real-time." 
+               data-ar="أداة ويب مخصصة للتعرف على الصوت وتحويل الكلام المنطوق إلى نصوص مكتوبة بدقة عالية وبشكل مباشر اعتماداً على تقنيات Web Speech API.">
+               A web-based voice recognition utility leveraging the Web Speech API to transcribe spoken audio into written text accurately and in real-time.
+            </p>
+            <div class="gallery"><img src="../assets/speech-1.png" alt=""></div>
+        </div>
+    </div>
+
+    <div id="modal-suword" class="modal">
+        <div class="modal-card">
+            <button class="close" onclick="closeModal('modal-suword')" aria-label="Close">&times;</button>
+            <h2>Suword Game</h2>
+            <p class="project-description" 
+               data-en="A highly interactive puzzle game crafted using Swift that merges the logical arrangement principles of Sudoku with creative word-discovery mechanisms." 
+               data-ar="لعبة ألغاز تفاعلية مبنية بلغة Swift تدمج بطريقة مبتكرة بين التفكير المنطقي الخاص بشبكات السودوكو وآليات استكشاف الكلمات المتقاطعة.">
+               A highly interactive puzzle game crafted using Swift that merges the logical arrangement principles of Sudoku with creative word-discovery mechanisms.
+            </p>
+            <div class="gallery"><img src="../assets/suword-1.png" alt=""><img src="../assets/suword-2.png" alt=""><img src="../assets/suword-3.png" alt=""></div>
+        </div>
+    </div>
+
+    <div id="modal-learning" class="modal">
+        <div class="modal-card">
+            <button class="close" onclick="closeModal('modal-learning')" aria-label="Close">&times;</button>
+            <h2>Learning App</h2>
+            <p class="project-description" 
+               data-en="High-fidelity front-end implementation of educational dashboards and screens translated strictly from design specifications using SwiftUI." 
+               data-ar="تنفيذ برمجي عالي الدقة لواجهات لوحات التحكم والمقاطع التعليمية وتطبيقها برمجياً باستخدام SwiftUI بناءً على مواصفات وملفات التصميم المسبقة.">
+               High-fidelity front-end implementation of educational dashboards and screens translated strictly from design specifications using SwiftUI.
+            </p>
+            <div class="gallery"><img src="../assets/learning-1.png" alt=""><img src="../assets/learning-2.png" alt=""><img src="../assets/learning-3.png" alt=""></div>
+        </div>
+    </div>
+
+    <div id="modal-trackit" class="modal">
+        <div class="modal-card">
+            <button class="close" onclick="closeModal('modal-trackit')" aria-label="Close">&times;</button>
+            <h2>TrackIt App</h2>
+            <p class="project-description" 
+               data-en="A habit-building iOS application developed with SwiftUI, featuring per-day progress tracking, mood journaling, and local push notifications — empowering users to build consistent daily habits and reflect on how their routines affect their overall wellbeing." 
+               data-ar="تطبيق لنظام iOS لبناء العادات تم تطويره باستخدام SwiftUI، يتميز بتتبع التقدم اليومي، تدوين الحالة المزاجية، والإشعارات المحلية — مما يمكن المستخدمين من بناء عادات يومية مستمرة والتفكر في مدى تأثير روتينهم اليومي على عافيتهم العامة.">
+               A habit-building iOS application developed with SwiftUI, featuring per-day progress tracking, mood journaling, and local push notifications — empowering users to build consistent daily habits and reflect on how their routines affect their overall wellbeing.
+            </p>
+            <div class="gallery">
+                <img src="../assets/trackit-1.png" alt="" onerror="this.style.display='none'">
+                <img src="../assets/trackit-2.png" alt="" onerror="this.style.display='none'">
+                <img src="../assets/trackit-3.png" alt="" onerror="this.style.display='none'">
+                <img src="../assets/trackit-4.png" alt="" onerror="this.style.display='none'">
+                <img src="../assets/trackit-5.png" alt="" onerror="this.style.display='none'">
+                <img src="../assets/trackit-6.png" alt="" onerror="this.style.display='none'">
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
